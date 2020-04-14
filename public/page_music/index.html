@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Music</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <link rel="stylesheet" href="../common.css">
+</head>
+<body>
+    <div id="canvas-container-music"></div>
+    <!--
+    <script id="vertexShader" type="x-shader/x-vertex">
+        void main() {
+            gl_Position = vec4( position, 1.0 );
+        }
+    </script>
+    <script id="fragmentShader" type="x-shader/x-fragment">        
+        precision mediump float;
+        uniform float u_time; // time
+        uniform vec2  u_resolution; // resolution
+        
+        void main(void){
+            vec3 destColor = vec3(0.5, 0.4, 0.0);
+            vec2 p = (gl_FragCoord.xy * 2.0 - u_resolution) / min(u_resolution.x, u_resolution.y); // 正規化
+            float l = 0.05 / abs(length(p) - 0.5) * (sin(u_time)*0.5+1.0);
+            //l += 0.05 / abs(length(p*sin(u_time)) - 0.3);
+            //l += 0.05 / abs(length(p) - 0.1);
+            gl_FragColor = vec4(l*destColor, 1.0);
+        }
+    </script>
+    -->
+    <script src="../js/bundle.js"></script>
+</body>
+</html>
