@@ -12,5 +12,8 @@
     "raw-loader": "^4.0.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "three-bas": "^2.11.0"
   }
 }
