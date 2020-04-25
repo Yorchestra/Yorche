@@ -2,10 +2,14 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/js/index.js',
+    entry: {
+        index: './src/index.js',
+        music: './src/music/index.js', //二つ目のエントリーポイント
+        games: './src/games/index.js'
+    },
     output: {
-        filename: 'bundle.js',
-        path: path.join(__dirname, 'public/js') //絶対パス
+        filename: '[name].bundle.js', //[name]はエントリーポイント名
+        path: path.join(__dirname, 'public') //絶対パス
     },
     module: {
         rules: [

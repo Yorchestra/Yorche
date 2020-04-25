@@ -1,20 +1,49 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Games</title>
-    <meta name="viewport" content="width=device-width">
+	<title>three.js webgl - instancing test (single triangle)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <!--<link rel="stylesheet" href="/resource/css/common.css">-->
+	<style>
+		a {
+			color: #08f;
+		}
+		.gamesBox {
+            position: absolute;
+            top: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+            width: 700px;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: auto;
+            background-color: rgba(0.0, 0.0, 0.0, 0.5);
+        }
+		.games {
+			padding: 20px;
+		}
+		a {
+			font-size: 30px;
+		}
+		#container {
+			position: fixed;
+			top: 0;
+		}
+	</style>
 </head>
 <body>
-    <!--
-    <div id="canvas-container"></div>
-
-    <script src="/resource/js/vendor.bundle.js"></script>
-    <script src="/resource/js/common.bundle.js"></script>
-    -->
-    <h1>Games</h1>
-    <script src="../js/bundle.js"></script>
+    <div id="container"></div>
+	<script type="module" src="../index.bundle.js"></script>
+	<div class="gamesBox">
+		<div class="games">
+			<img class="games" src="title.png">
+		</div>
+		<a href="https://unityroom.com/games/stairwaytozero">Play</a>
+	</div>
 </body>
 </html>
